@@ -1,7 +1,7 @@
 **Chesches Iulia-Stefana && Spinochi Andreea**
                 **312CA**
 
-# Simple Linux File System - 3rd SDA Homework
+# Simple Linux File System
 
 ## Brief Description:
 
