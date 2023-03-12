@@ -1,0 +1,6 @@
+mkdir A
+cd A
+touch a
+ls
+cd ..
+ls

@@ -1,0 +1,20 @@
+$ mkdir A 
+
+$ cd A
+
+$ mkdir B
+
+$ cd ..
+
+$ touch a 
+
+$ cp a A/B
+
+$ ls
+a
+A
+
+$ cd A/B
+
+$ ls  
+a

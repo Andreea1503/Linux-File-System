@@ -1,0 +1,18 @@
+$ mkdir A 
+
+$ touch a 
+
+$ mkdir B 
+
+$ touch c 
+
+$ touch d 
+
+$ rm c 
+
+$ ls  
+d
+B
+a
+A
+

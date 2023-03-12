@@ -1,0 +1,9 @@
+touch Iulia ambani
+touch Andreea imiplacecafeluta
+mkdir Alexdir
+ls Alexdir
+cd Alexdir2/
+touch Alex cefaciba
+pwd
+ls Alex
+tree

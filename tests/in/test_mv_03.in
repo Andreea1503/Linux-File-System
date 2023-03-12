@@ -1,0 +1,9 @@
+mkdir A 
+cd A
+mkdir B
+cd ..
+touch a 
+mv a A/B
+ls
+cd A/B
+ls  

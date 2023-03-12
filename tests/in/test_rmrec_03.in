@@ -1,0 +1,8 @@
+mkdir A
+mkdir B
+cd B
+touch b
+cd ..
+mkdir C
+rmrec E
+ls

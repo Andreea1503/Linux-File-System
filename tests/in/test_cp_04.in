@@ -1,0 +1,6 @@
+mkdir A 
+cd A
+mkdir B
+cd ..
+mkdir C
+cp C A/B

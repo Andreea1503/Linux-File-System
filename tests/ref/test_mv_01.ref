@@ -1,0 +1,10 @@
+$ mkdir A 
+
+$ touch a 
+
+$ mv a A
+
+$ tree  
+A
+    a
+1 directories, 1 files

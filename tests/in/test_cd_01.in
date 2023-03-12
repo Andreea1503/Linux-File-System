@@ -1,0 +1,4 @@
+mkdir A
+cd A
+touch a
+ls

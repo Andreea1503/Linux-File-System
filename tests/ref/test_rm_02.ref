@@ -1,0 +1,20 @@
+$ mkdir A 
+
+$ touch a 
+
+$ mkdir B 
+
+$ touch c 
+
+$ touch d 
+
+$ rm B 
+rm: cannot remove 'B': Is a directory
+
+$ ls  
+d
+c
+B
+a
+A
+

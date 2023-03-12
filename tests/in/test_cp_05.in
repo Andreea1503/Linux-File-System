@@ -1,0 +1,6 @@
+mkdir A 
+cd A
+mkdir B
+cd ..
+touch a 
+cp a A/B/C/d

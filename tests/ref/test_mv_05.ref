@@ -1,0 +1,12 @@
+$ mkdir A 
+
+$ cd A
+
+$ mkdir B
+
+$ cd ..
+
+$ touch a 
+
+$ mv a A/B/C/d
+mv: failed to access 'A/B/C/d': Not a directory

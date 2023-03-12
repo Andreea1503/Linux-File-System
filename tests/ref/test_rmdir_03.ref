@@ -1,0 +1,19 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ mkdir C 
+
+$ cd B 
+
+$ touch b1 
+
+$ touch b2 
+
+$ touch b3 
+
+$ touch b4 
+
+$ rmdir b3 
+rmdir: failed to remove 'b3': Not a directory
+

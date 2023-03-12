@@ -1,0 +1,6 @@
+touch a content_a
+ls
+mkdir B
+ls
+touch c
+ls

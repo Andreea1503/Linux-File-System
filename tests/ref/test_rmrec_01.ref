@@ -1,0 +1,18 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ cd B 
+
+$ touch b 
+
+$ cd .. 
+
+$ mkdir C 
+
+$ rmrec B 
+
+$ ls  
+C
+A
+

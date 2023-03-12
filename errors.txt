@@ -1,0 +1,192 @@
+main.c: In function ‘process_command’:
+main.c:25:84: warning: unused parameter ‘token_count’ [-Wunused-parameter]
+   25 | TreeNode* process_command(TreeNode* currentFolder, char cmd[3][TOKEN_MAX_LEN], int token_count) {
+      |                                                                                ~~~~^~~~~~~~~~~
+tree.c: In function ‘freeTree’:
+tree.c:25:24: warning: unused parameter ‘fileTree’ [-Wunused-parameter]
+   25 | void freeTree(FileTree fileTree) {
+      |               ~~~~~~~~~^~~~~~~~
+tree.c: In function ‘ls’:
+tree.c:30:19: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   30 | void ls(TreeNode* currentNode, char* arg) {
+      |         ~~~~~~~~~~^~~~~~~~~~~
+tree.c:30:38: warning: unused parameter ‘arg’ [-Wunused-parameter]
+   30 | void ls(TreeNode* currentNode, char* arg) {
+      |                                ~~~~~~^~~
+tree.c: In function ‘pwd’:
+tree.c:35:20: warning: unused parameter ‘treeNode’ [-Wunused-parameter]
+   35 | void pwd(TreeNode* treeNode) {
+      |          ~~~~~~~~~~^~~~~~~~
+tree.c: In function ‘cd’:
+tree.c:40:24: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   40 | TreeNode* cd(TreeNode* currentNode, char* path) {
+      |              ~~~~~~~~~~^~~~~~~~~~~
+tree.c:40:43: warning: unused parameter ‘path’ [-Wunused-parameter]
+   40 | TreeNode* cd(TreeNode* currentNode, char* path) {
+      |                                     ~~~~~~^~~~
+tree.c: In function ‘tree’:
+tree.c:45:21: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   45 | void tree(TreeNode* currentNode, char* arg) {
+      |           ~~~~~~~~~~^~~~~~~~~~~
+tree.c:45:40: warning: unused parameter ‘arg’ [-Wunused-parameter]
+   45 | void tree(TreeNode* currentNode, char* arg) {
+      |                                  ~~~~~~^~~
+tree.c: In function ‘mkdir’:
+tree.c:50:22: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   50 | void mkdir(TreeNode* currentNode, char* folderName) {
+      |            ~~~~~~~~~~^~~~~~~~~~~
+tree.c:50:41: warning: unused parameter ‘folderName’ [-Wunused-parameter]
+   50 | void mkdir(TreeNode* currentNode, char* folderName) {
+      |                                   ~~~~~~^~~~~~~~~~
+tree.c: In function ‘rmrec’:
+tree.c:55:22: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   55 | void rmrec(TreeNode* currentNode, char* resourceName) {
+      |            ~~~~~~~~~~^~~~~~~~~~~
+tree.c:55:41: warning: unused parameter ‘resourceName’ [-Wunused-parameter]
+   55 | void rmrec(TreeNode* currentNode, char* resourceName) {
+      |                                   ~~~~~~^~~~~~~~~~~~
+tree.c: In function ‘rm’:
+tree.c:60:19: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   60 | void rm(TreeNode* currentNode, char* fileName) {
+      |         ~~~~~~~~~~^~~~~~~~~~~
+tree.c:60:38: warning: unused parameter ‘fileName’ [-Wunused-parameter]
+   60 | void rm(TreeNode* currentNode, char* fileName) {
+      |                                ~~~~~~^~~~~~~~
+tree.c: In function ‘rmdir’:
+tree.c:65:22: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   65 | void rmdir(TreeNode* currentNode, char* folderName) {
+      |            ~~~~~~~~~~^~~~~~~~~~~
+tree.c:65:41: warning: unused parameter ‘folderName’ [-Wunused-parameter]
+   65 | void rmdir(TreeNode* currentNode, char* folderName) {
+      |                                   ~~~~~~^~~~~~~~~~
+tree.c: In function ‘cp’:
+tree.c:92:19: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   92 | void cp(TreeNode* currentNode, char* source, char* destination) {
+      |         ~~~~~~~~~~^~~~~~~~~~~
+tree.c:92:38: warning: unused parameter ‘source’ [-Wunused-parameter]
+   92 | void cp(TreeNode* currentNode, char* source, char* destination) {
+      |                                ~~~~~~^~~~~~
+tree.c:92:52: warning: unused parameter ‘destination’ [-Wunused-parameter]
+   92 | void cp(TreeNode* currentNode, char* source, char* destination) {
+      |                                              ~~~~~~^~~~~~~~~~~
+tree.c: In function ‘mv’:
+tree.c:96:19: warning: unused parameter ‘currentNode’ [-Wunused-parameter]
+   96 | void mv(TreeNode* currentNode, char* source, char* destination) {
+      |         ~~~~~~~~~~^~~~~~~~~~~
+tree.c:96:38: warning: unused parameter ‘source’ [-Wunused-parameter]
+   96 | void mv(TreeNode* currentNode, char* source, char* destination) {
+      |                                ~~~~~~^~~~~~
+tree.c:96:52: warning: unused parameter ‘destination’ [-Wunused-parameter]
+   96 | void mv(TreeNode* currentNode, char* source, char* destination) {
+      |                                              ~~~~~~^~~~~~~~~~~
+tree.c: In function ‘cd’:
+tree.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+   42 | }
+      | ^
+==2852== Memcheck, a memory error detector
+==2852== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2852== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2852== Command: ./main
+==2852== 
+==2852== error calling PR_SET_PTRACER, vgdb might block
+==2852== Invalid write of size 8
+==2852==    at 0x109A45: list_add_node (utils.c:30)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852==  Address 0x4a4a928 is 0 bytes after a block of size 8 alloc'd
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x109A2F: list_add_node (utils.c:29)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== Invalid write of size 8
+==2852==    at 0x10996F: touch (tree.c:85)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852==  Address 0x4a4a938 is 16 bytes after a block of size 8 alloc'd
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x109A2F: list_add_node (utils.c:29)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== Invalid read of size 8
+==2852==    at 0x109984: touch (tree.c:87)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852==  Address 0x4a4a938 is 16 bytes after a block of size 8 alloc'd
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x109A2F: list_add_node (utils.c:29)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 
+==2852== HEAP SUMMARY:
+==2852==     in use at exit: 98 bytes in 9 blocks
+==2852==   total heap usage: 12 allocs, 3 frees, 5,690 bytes allocated
+==2852== 
+==2852== 5 bytes in 1 blocks are indirectly lost in loss record 1 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x48F33BE: strdup (strdup.c:42)
+==2852==    by 0x109649: main (main.c:62)
+==2852== 
+==2852== 6 bytes in 1 blocks are definitely lost in loss record 2 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x48F33BE: strdup (strdup.c:42)
+==2852==    by 0x10954E: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 7 bytes in 1 blocks are indirectly lost in loss record 3 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x48F33BE: strdup (strdup.c:42)
+==2852==    by 0x109539: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 8 bytes in 1 blocks are indirectly lost in loss record 4 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x1097F7: createFileTree (tree.c:18)
+==2852==    by 0x109656: main (main.c:62)
+==2852== 
+==2852== 8 bytes in 1 blocks are indirectly lost in loss record 5 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x1099DC: list_create (utils.c:12)
+==2852==    by 0x109814: createFileTree (tree.c:19)
+==2852==    by 0x109656: main (main.c:62)
+==2852== 
+==2852== 8 bytes in 1 blocks are indirectly lost in loss record 6 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x109A2F: list_add_node (utils.c:29)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 15 (8 direct, 7 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x10996E: touch (tree.c:85)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 16 bytes in 1 blocks are indirectly lost in loss record 8 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x109A21: list_add_node (utils.c:28)
+==2852==    by 0x109953: touch (tree.c:84)
+==2852==    by 0x109563: process_command (main.c:44)
+==2852==    by 0x109748: main (main.c:78)
+==2852== 
+==2852== 77 (32 direct, 45 indirect) bytes in 1 blocks are definitely lost in loss record 9 of 9
+==2852==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2852==    by 0x1097C7: createFileTree (tree.c:13)
+==2852==    by 0x109656: main (main.c:62)
+==2852== 
+==2852== LEAK SUMMARY:
+==2852==    definitely lost: 46 bytes in 3 blocks
+==2852==    indirectly lost: 52 bytes in 6 blocks
+==2852==      possibly lost: 0 bytes in 0 blocks
+==2852==    still reachable: 0 bytes in 0 blocks
+==2852==         suppressed: 0 bytes in 0 blocks
+==2852== 
+==2852== For lists of detected and suppressed errors, rerun with: -s
+==2852== ERROR SUMMARY: 6 errors from 6 contexts (suppressed: 0 from 0)

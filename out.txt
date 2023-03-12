@@ -1,0 +1,22 @@
+$ mkdir A 
+
+$ cd A 
+
+$ mkdir B 
+
+$ cd .. 
+
+$ mkdir C 
+
+$ mv C A/B
+
+$ cd A/B/C 
+cd: no such file or directory: A
+
+$ touch x 
+
+$ ls  
+x
+C
+A
+

@@ -1,0 +1,18 @@
+$ touch a content_a
+
+$ ls a 
+a: content_a
+
+$ touch b content_b
+
+$ ls b 
+b: content_b
+
+$ touch b 
+
+$ touch a 
+
+$ ls  
+b
+a
+

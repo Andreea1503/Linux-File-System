@@ -1,0 +1,7 @@
+mkdir A
+touch b content_b
+cd A
+touch a content_a
+cp a ../b
+cd ..
+ls b

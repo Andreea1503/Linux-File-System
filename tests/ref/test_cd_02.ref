@@ -1,0 +1,14 @@
+$ mkdir A 
+
+$ cd A 
+
+$ touch a 
+
+$ ls  
+a
+
+$ cd .. 
+
+$ ls  
+A
+

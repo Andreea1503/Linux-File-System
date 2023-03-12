@@ -1,0 +1,23 @@
+$ touch a content_a
+
+$ ls b 
+ls: cannot access 'b': No such file or directory
+
+$ touch b content_b
+
+$ ls b 
+b: content_b
+
+$ touch c content_c
+
+$ ls c 
+c: content_c
+
+$ touch d content_d
+
+$ ls  
+d
+c
+b
+a
+

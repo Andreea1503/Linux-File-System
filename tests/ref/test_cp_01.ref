@@ -1,0 +1,14 @@
+$ mkdir A 
+
+$ cd A 
+
+$ touch a content_a
+
+$ cp a ..
+
+$ cd .. 
+
+$ ls  
+a
+A
+

@@ -1,0 +1,9 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ rmdir A 
+
+$ ls  
+B
+

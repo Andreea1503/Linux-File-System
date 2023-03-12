@@ -1,0 +1,20 @@
+$ mkdir A
+
+$ touch b content_b
+
+$ cd A 
+
+$ touch a content_a
+
+$ mv ../b a
+
+$ ls a 
+a: content_b
+
+$ cd ..
+
+$ touch d
+
+$ ls
+d
+A

@@ -1,0 +1,20 @@
+$ mkdir A 
+
+$ touch a 
+
+$ mkdir B 
+
+$ touch c 
+
+$ touch d 
+
+$ rm E
+rm: failed to remove 'E': No such file or directory
+
+$ ls  
+d
+c
+B
+a
+A
+

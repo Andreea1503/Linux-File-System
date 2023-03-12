@@ -1,0 +1,4 @@
+mkdir A
+touch a
+mv a A
+tree

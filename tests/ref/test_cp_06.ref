@@ -1,0 +1,13 @@
+$ mkdir A 
+
+$ touch b content_b
+
+$ cd A 
+
+$ touch a content_a
+
+$ cp ../b a
+
+$ ls a 
+a: content_b
+

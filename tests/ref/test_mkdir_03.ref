@@ -1,0 +1,18 @@
+$ mkdir A 
+
+$ ls  
+A
+
+$ mkdir B 
+
+$ ls  
+B
+A
+
+$ mkdir A 
+mkdir: cannot create directory 'A': File exists
+
+$ ls  
+B
+A
+

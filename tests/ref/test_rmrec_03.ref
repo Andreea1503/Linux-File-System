@@ -1,0 +1,20 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ cd B 
+
+$ touch b 
+
+$ cd .. 
+
+$ mkdir C 
+
+$ rmrec E
+rmrec: failed to remove 'E': No such file or directory
+
+$ ls  
+C
+B
+A
+

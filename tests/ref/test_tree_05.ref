@@ -1,0 +1,28 @@
+$ mkdir A 
+
+$ cd A 
+
+$ mkdir B 
+
+$ cd B 
+
+$ touch b 
+
+$ cd .. 
+
+$ mkdir C 
+
+$ cd C 
+
+$ touch c 
+
+$ touch d 
+
+$ cd ../.. 
+
+$ touch y content_y
+
+$ tree A/C 
+d
+c
+0 directories, 2 files

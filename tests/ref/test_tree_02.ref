@@ -1,0 +1,9 @@
+$ mkdir A 
+
+$ touch b 
+
+$ tree C 
+C [error opening dir]
+
+0 directories, 0 files
+

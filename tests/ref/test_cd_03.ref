@@ -1,0 +1,24 @@
+$ mkdir A 
+
+$ cd A 
+
+$ mkdir B 
+
+$ cd B 
+
+$ mkdir C 
+
+$ cd C 
+
+$ ls  
+
+$ cd ../.. 
+
+$ ls  
+B
+
+$ cd .. 
+
+$ ls  
+A
+

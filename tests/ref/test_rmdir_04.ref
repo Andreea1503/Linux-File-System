@@ -1,0 +1,11 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ rmdir C 
+rmdir: failed to remove 'C': No such file or directory
+
+$ ls  
+B
+A
+

@@ -1,0 +1,10 @@
+$ mkdir A 
+
+$ cd A 
+
+$ mkdir B 
+
+$ cd B 
+
+$ pwd  
+root/A/B

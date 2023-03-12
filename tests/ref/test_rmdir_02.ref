@@ -1,0 +1,15 @@
+$ mkdir A 
+
+$ mkdir B 
+
+$ mkdir C 
+
+$ cd B 
+
+$ touch b 
+
+$ cd .. 
+
+$ rmdir B 
+rmdir: failed to remove 'B': Directory not empty
+
